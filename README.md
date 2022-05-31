@@ -5,6 +5,7 @@
 git clone git@github.com:ctrlVadim/car_rent.git
 cd car_rent
 composer install
+cp .env.example .env
 php artisan migrate --seed
 docker-compose up -d
 xdg-open http::127.0.0.1:50000
